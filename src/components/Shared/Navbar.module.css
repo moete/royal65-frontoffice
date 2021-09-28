@@ -1,0 +1,123 @@
+.nav {
+  max-width: 1110px;
+  min-height: 96px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #4543a9;
+  background-color: var(--clr-primary-blue);
+}
+.right-side-nav-container {
+  width: 842px;
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  width: 538px;
+  height: 26px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul li {
+  height: 26px;
+  font-family: var(--font-roboto);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.nav ul li:hover {
+  color: var(--clr-primary-cyan);
+}
+
+.logo {
+  width: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-container {
+  width: 279px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h5 {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+select {
+  color: #fff;
+  background-color: var(--clr-primary-blue);
+  border: none;
+  outline: none;
+  height: 26px;
+  font-family: var(--font-roboto);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav ul li.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.burger-icon {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+@media screen and (max-width: 1110px) {
+  .nav {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .right-side-nav-container {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  .right-side-nav-mobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .right-side-nav-mobile ul {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 350px;
+  }
+}
