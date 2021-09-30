@@ -40,24 +40,12 @@
   color: var(--clr-primary-cyan);
 }
 
-.logo {
-  width: 116px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
 .btn-container {
   width: 279px;
   height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo h5 {
-  font-family: "Chakra Petch", sans-serif;
 }
 
 select {

@@ -17,36 +17,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
 }
-.feature-content h1 {
+.feature-content div:first-of-type {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feature-content h2 {
   font-family: var(--font-chakra-petch);
   text-transform: uppercase;
 }
-.feature-content p {
-  margin: 40px 0;
-}
-.feature-carousel {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: scroll;
-  margin-top: 140px;
-}
-.feature-carousel img {
-  margin-right: 20px;
-}
-.feature-carousel::-webkit-scrollbar {
-  display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-.feature-carousel {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+
 @media screen and (max-width: 1110px) {
   .feature-game {
-    height: 500px;
     height: auto;
   }
   .pwe-fix-position {
@@ -64,17 +48,27 @@
   .feature-content {
     width: 100%;
     height: auto;
+    display: block;
     text-align: center;
-    justify-content: center;
+  }
+  .feature-content div p {
+    margin: 40px 0;
   }
 }
 
-/* large screen */
+/* large screens */
 @media screen and (max-width: 768px) {
   .feature-content {
     width: 100%;
     height: auto;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* small screens */
+@media screen and (max-width: 576px) {
+  .feature-content div:first-of-type {
+    height: auto;
   }
 }

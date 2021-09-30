@@ -9,6 +9,7 @@ Variables
   --clr-primary-purple: #9101f6;
   --clr-primary-blue: #280b70;
   --clr-primary-dark-blue: #00003e;
+  --clr-primary-cold-blue: #0d0d48;
   --clr-primary-semi-dark-blue: #0d0d59;
   --clr-primary-lightBlue: #03d6f9;
   --clr-primary-pink: #ff0279;
@@ -103,4 +104,35 @@ p {
 .small-text {
   font-size: 14px;
   line-height: 19.6px;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 57px;
+    line-height: 68.4px;
+  }
+  h2 {
+    font-size: 43px;
+    line-height: 51.6px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
 }

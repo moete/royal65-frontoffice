@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "./../UI/Button";
+import Logo from "./../UI/Logo";
 import GlobeIcon from "./../../assets/icons/GlobeIcon.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./Navbar.module.css";
@@ -14,10 +15,7 @@ function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
-        <img src="/icon.svg" alt="logo" />
-        <h5>GAINIO</h5>
-      </div>
+      <Logo />
       <div
         className={`${styles["right-side-nav-container"]} ${
           isNavbarOpen && styles["right-side-nav-mobile"]
