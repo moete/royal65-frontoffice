@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "./../UI/Button";
-import GridCards from "./../Shared/GridCards.js";
+import GridCards from "./GridCards.js";
 import rightArrow from "./../../assets/icons/rightArrow.svg";
 
 import styles from "./AvailableGames.module.css";

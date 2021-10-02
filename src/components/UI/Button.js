@@ -7,7 +7,7 @@ function Button(props) {
   let cssClasses;
 
   switch (btnLook) {
-    case "signin":
+    case "blue":
       cssClasses = `${styles.btn} ${styles["signin-btn"]} medium-text`;
       break;
     default:

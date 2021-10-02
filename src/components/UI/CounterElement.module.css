@@ -13,10 +13,10 @@
   width: 100px;
   height: 100px;
 }
-h4,
-h5 {
+.counter-element h4,
+.counter-element h5 {
   font-family: var(--font-chakra-petch);
 }
-h5 {
+.counter-element h5 {
   color: var(--clr-primary-cyan);
 }

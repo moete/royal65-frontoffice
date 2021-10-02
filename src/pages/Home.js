@@ -1,13 +1,17 @@
 import React from "react";
 
+import {
+  FeatureGame,
+  AvailableGames,
+  LevelUp,
+  BiggestWinners,
+  Counter,
+  LatestActivities,
+  CommonQuestions,
+} from "../components/Shared";
 import HeaderHome from "../components/Layout/HeaderHome";
-import FeatureGame from "../components/Shared/FeatureGame";
-import AvailableGames from "../components/Shared/AvailableGames";
-import LevelUp from "../components/Shared/LevelUp";
-import BiggestWinners from "../components/Shared/BiggestWinners";
+import Footer from "../components/Layout/Footer";
 import styles from "./Home.module.css";
-import Counter from "../components/Shared/Counter";
-import LatestActivities from "../components/Shared/LatestActivities";
 
 const Home = () => {
   return (
@@ -20,6 +24,8 @@ const Home = () => {
         <BiggestWinners />
         <Counter />
         <LatestActivities />
+        <CommonQuestions />
+        <Footer />
       </div>
     </main>
   );

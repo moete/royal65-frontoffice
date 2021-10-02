@@ -1,37 +1,37 @@
 import React from "react";
-
-import Button from "./../UI/Button";
+import { NavLink } from "react-router-dom";
 import Logo from "./../UI/Logo";
 import GlobeIcon from "./../../assets/icons/GlobeIcon.svg";
-import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./Navbar.module.css";
 
-function Navbar() {
-  const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
-
-  const toggleNavbar = () => {
-    setIsNavbarOpen(!isNavbarOpen);
-  };
-
+function Navbar(props) {
   return (
-    <nav className={styles.nav}>
-      <Logo />
-      <div
-        className={`${styles["right-side-nav-container"]} ${
-          isNavbarOpen && styles["right-side-nav-mobile"]
-        }`}
-      >
+    <nav className={`${styles.nav} ${props.className}`}>
+      <Logo className={styles["logo-display"]} />
+      <div className={`${styles["right-side-nav-container"]}`}>
         <ul>
-          <li>Home</li>
-          <li>GAMES</li>
-          <li>TOURNAMENTS</li>
+          <li>
+            <NavLink exact={true} to="/" activeClassName={styles["active"]}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/games" activeClassName={styles["active"]}>
+              GAMES
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/tournaments" activeClassName={styles["active"]}>
+              TOURNAMENTS
+            </NavLink>
+          </li>
           <li className={styles.pages}>
             <img src={GlobeIcon} alt="earth icon" />
             <select name="pages">
               <option>Pages</option>
-              <option>Page1</option>
-              <option>Page12</option>
-              <option>Page13</option>
+              <option>About</option>
+              <option>Page 2</option>
+              <option>Page 3</option>
             </select>
           </li>
           <li>
@@ -42,15 +42,7 @@ function Navbar() {
             </select>
           </li>
         </ul>
-        <div className={styles["btn-container"]}>
-          <Button value="register" />
-          <Button value="sign up" btnLook="signin" />
-        </div>
       </div>
-      <GiHamburgerMenu
-        className={styles["burger-icon"]}
-        onClick={toggleNavbar}
-      />
     </nav>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
 
-import Navbar from "./../Shared/Navbar";
+import { NavbarMenu } from "./../Shared";
 import Button from "../UI/Button";
 import styles from "./HeaderHome.module.css";
 function HeaderHome() {
   return (
-    <header>
-      <Navbar />
+    <header className={styles["header-home"]}>
+      <NavbarMenu />
       <div className={styles.banner}>
         <div className={styles["showcase-content"]}>
           <h1>PLAY & GAIN</h1>

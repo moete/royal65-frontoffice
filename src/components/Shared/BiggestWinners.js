@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "./../UI/Button";
-import TopThreeWinners from "./../Shared/TopThreeWinners";
+import { TopThreeWinners } from "./../Shared";
 import todaysWinnersImage from "./../../assets/images/todaysWinnersBg.svg";
 import trophyImage from "./../../assets/images/trophy.svg";
 import styles from "./BiggestWinners.module.css";
