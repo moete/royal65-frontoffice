@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .header-shared-menu {
+    background-position: left;
+  }
   .header-shared-menu-content {
     text-align: center;
     justify-content: flex-end;

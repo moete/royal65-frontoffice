@@ -25,3 +25,7 @@
 .showcase-content p {
   font-family: var(--font-chakra-petch);
 }
+
+.showcase-content p {
+  margin: 30px 0;
+}

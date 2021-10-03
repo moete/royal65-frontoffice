@@ -5,7 +5,7 @@ import styles from "./WinnerItem.module.css";
 function WinnerItem(props) {
   const { imgUrl, imgAlt, photoUrl, photoAlt, winnerName, winnerPrize } = props;
   return (
-    <div className={styles.winner}>
+    <div className={`${styles.winner} ${props.className}`}>
       <img src={imgUrl} alt={photoAlt ? photoAlt : "random winner icon"} />
       <div className={styles["winner-content"]}>
         <div>

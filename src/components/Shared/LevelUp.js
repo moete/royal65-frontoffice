@@ -6,9 +6,9 @@ import bonusesimg from "./../../assets/images/bonuses.svg";
 import tournamentsimg from "./../../assets/images/tournaments.svg";
 
 import styles from "./../Shared/LevelUp.module.css";
-function LevelUp() {
+function LevelUp(props) {
   return (
-    <section className={styles["level-up"]}>
+    <section className={`${styles["level-up"]} ${props.className}`}>
       <div className={styles["level-up-wrapper"]}>
         <img src={levelupimg} alt="gamer desktop setup" />
         <div className={styles["level-up-content"]}>

@@ -12,6 +12,7 @@
   font-family: var(--font-roboto);
   font-weight: 900;
   transition: var(--transition);
+  letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -20,11 +21,6 @@
 
 .btn:active {
   box-shadow: none;
-}
-
-.signin-btn {
-  background-color: var(--clr-btn-purple);
-  box-shadow: 0px 3px 0px var(--clr-btn-drop-shadow-purple);
 }
 
 .active {

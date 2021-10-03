@@ -19,7 +19,15 @@ function Login(props) {
           <div className={styles["login-form-header-lower"]}>
             <h5>Get started in a minute!</h5>
             <p>
-              Already have an account? <span>login</span>
+              Already have an account?{" "}
+              <span
+                onClick={() => {
+                  props.onClose();
+                  props.onOpenRegister();
+                }}
+              >
+                login
+              </span>
             </p>
           </div>
         </div>
@@ -27,23 +35,29 @@ function Login(props) {
           <form>
             <div className={styles["form-group"]}>
               <label>Email Address</label>
-              <input type="email" placeholder="Register Email Address." />
+              <input type="email" placeholder="Registered Email Address." />
             </div>
             <div className={styles["form-group"]}>
               <label>Password</label>
               <input type="password" placeholder="Password" />
             </div>
-            <div className={styles["form-group"]}>
+            <div className={styles["form-group-checkbox"]}>
               <input type="checkbox" />
               <p>
                 I agree with <span>user agreement</span>, and confirm that I am
                 at least 18 years old!
               </p>
             </div>
-            <Button type="button" value="Register Now!" />
+            <Button
+              type="button"
+              value="Register Now!"
+              className={styles["custom-btn"]}
+            />
           </form>
           <p>register in directly with</p>
-          <SocialMediaBar />
+          <div className={styles["social-media-wrapper"]}>
+            <SocialMediaBar />
+          </div>
         </div>
       </div>
     </Modal>

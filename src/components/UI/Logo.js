@@ -5,7 +5,14 @@ function Logo(props) {
   return (
     <div className={`${styles.logo} ${props.className}`}>
       <img src="/icon.svg" alt="logo" />
-      <h5>GAINIO</h5>
+      <h5
+        style={{
+          fontSize: "24px",
+          lineHeight: "28.8px",
+        }}
+      >
+        GAINIO
+      </h5>
     </div>
   );
 }

@@ -3,22 +3,24 @@ import React from "react";
 import styles from "./Button.module.css";
 
 function Button(props) {
-  const { type, btnLook, value, onClick, icon } = props;
-  let cssClasses;
+  const { type, value, onClick, icon, iconLeft, className } = props;
+  let cssClasses = `${styles.btn} ${className} medium-text`;
 
-  switch (btnLook) {
-    case "blue":
-      cssClasses = `${styles.btn} ${styles["signin-btn"]} medium-text`;
-      break;
-    default:
-      cssClasses = `${styles.btn} medium-text`;
+  if (iconLeft) {
+    return (
+      <button className={cssClasses} onClick={onClick} type={type || "button"}>
+        {icon && (
+          <img src={icon} alt="custom icon" style={{ margin: "0 10px" }} />
+        )}
+        <span>{value}</span>
+      </button>
+    );
   }
-
   return (
     <button className={cssClasses} onClick={onClick} type={type || "button"}>
       {value}
       {icon && (
-        <img src={icon} alt="custom icon" style={{ marginLeft: "10px" }} />
+        <img src={icon} alt="custom icon" style={{ margin: "0 10px" }} />
       )}
     </button>
   );

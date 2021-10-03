@@ -62,9 +62,9 @@ const tableData = [
     profitIcon: Icon,
   },
 ];
-function LatestActivities() {
+function LatestActivities(props) {
   return (
-    <section className={styles["latest-activities"]}>
+    <section className={`${styles["latest-activities"]} ${props.className}`}>
       <div className={styles["latest-activities-wrapper"]}>
         <div className={styles["latest-activities-content"]}>
           <div>

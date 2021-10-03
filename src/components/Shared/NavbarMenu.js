@@ -31,8 +31,18 @@ function NavbarMenu() {
   };
   return (
     <>
-      {loginIsShown && <Login onClose={hideloginHandler} />}
-      {registerIsShown && <Register onClose={hideregisterHandler} />}
+      {loginIsShown && (
+        <Login
+          onClose={hideloginHandler}
+          onOpenRegister={showregisterHandler}
+        />
+      )}
+      {registerIsShown && (
+        <Register
+          onClose={hideregisterHandler}
+          onOpenLogin={showloginHandler}
+        />
+      )}
       <div
         className={`${styles["navbar-menu"]} ${
           isNavbarOpen ? styles["toggle-navbar"] : ""
@@ -40,12 +50,12 @@ function NavbarMenu() {
       >
         <Navbar />
         <div className={styles["navbar-btn-container"]}>
-          <Button value="sign up" btnLook="blue" onClick={showloginHandler} />
           <Button
-            value="register"
-            btnLook="register"
-            onClick={showregisterHandler}
+            value="sign up"
+            className={styles["signin-btn"]}
+            onClick={showloginHandler}
           />
+          <Button value="register" onClick={showregisterHandler} />
         </div>
       </div>
       <GiHamburgerMenu
