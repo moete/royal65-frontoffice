@@ -4,8 +4,6 @@ import { Navbar } from ".";
 import Button from "../UI/Button";
 import Login from "./AuthComponents/Login";
 import Register from "./AuthComponents/Register";
-
-import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavbarMenu.module.css";
 function NavbarMenu() {
   /* Login and register modal  handlers */
@@ -58,10 +56,7 @@ function NavbarMenu() {
           <Button value="register" onClick={showregisterHandler} />
         </div>
       </div>
-      <GiHamburgerMenu
-        className={styles["burger-icon"]}
-        onClick={toggleNavbar}
-      />
+
     </>
   );
 }
