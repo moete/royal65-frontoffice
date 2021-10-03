@@ -15,7 +15,6 @@ import TopThreeWinners from "./TopThreeWinners.js";
 import WinnerItem from "./WinnerItem.js";
 import SocialMediaBar from "./SocialMediaBar.js";
 import NavbarMenu from "./NavbarMenu.js";
-import SearchBar from "./SearchBar.js";
 
 export {
   AvailableGames,
@@ -35,5 +34,4 @@ export {
   WinnerItem,
   SocialMediaBar,
   NavbarMenu,
-  SearchBar,
 };

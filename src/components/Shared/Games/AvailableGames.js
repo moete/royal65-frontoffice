@@ -1,7 +1,7 @@
 import React from "react";
 import GridCards from "../GridCards";
 
-import { SearchBar } from "./../../Shared";
+import SearchBar from "./SearchBar";
 import styles from "./AvailableGames.module.css";
 function AvailableGames() {
   return (
