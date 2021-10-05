@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./../UI/Logo";
-import GlobeIcon from "./../../assets/icons/GlobeIcon.svg";
 import styles from "./Navbar.module.css";
+import PagesDropdown from "../UI/PagesDropdown";
+import LanguagesDropdown from "../UI/LanguagesDropdown";
 
 function Navbar(props) {
   return (
@@ -25,21 +26,11 @@ function Navbar(props) {
               TOURNAMENTS
             </NavLink>
           </li>
-          <li className={styles.pages}>
-            <img src={GlobeIcon} alt="earth icon" />
-            <select name="pages">
-              <option>Pages</option>
-              <option>About</option>
-              <option>Page 2</option>
-              <option>Page 3</option>
-            </select>
+          <li>
+            <PagesDropdown />
           </li>
           <li>
-            <select name="language">
-              <option>EN</option>
-              <option>FR</option>
-              <option>TN</option>
-            </select>
+            <LanguagesDropdown />
           </li>
         </ul>
       </div>
