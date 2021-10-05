@@ -25,11 +25,7 @@ function NavbarMenu() {
 
   /* Navbar toggle for responsive purpose */
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
-  const [classNameAnimation, setClassNameAnimation] = React.useState(false);
   const toggleNavbar = () => {
-    if (isNavbarOpen) {
-      setClassNameAnimation(true);
-    }
     setIsNavbarOpen(!isNavbarOpen);
   };
   return (

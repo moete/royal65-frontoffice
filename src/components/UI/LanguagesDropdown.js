@@ -19,7 +19,11 @@ function LanguagesDropdown() {
         onClick={() => setIsOpenLanguagesDropdown(!isOpenLanguagesDropdown)}
       >
         <span>{currentLanguage}</span>
-        <img src={downArrow} alt="down arrow for pages dropdown" />
+        <img
+          src={downArrow}
+          alt="down arrow for pages dropdown"
+          className={styles["animated-arrow"]}
+        />
       </div>
 
       <ul
