@@ -5,7 +5,6 @@ import Button from "../UI/Button";
 import Login from "./AuthComponents/Login";
 import Register from "./AuthComponents/Register";
 
-import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./NavbarMenu.module.css";
 function NavbarMenu() {
   /* Login and register modal  handlers */
@@ -26,7 +25,11 @@ function NavbarMenu() {
 
   /* Navbar toggle for responsive purpose */
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
+  const [classNameAnimation, setClassNameAnimation] = React.useState(false);
   const toggleNavbar = () => {
+    if (isNavbarOpen) {
+      setClassNameAnimation(true);
+    }
     setIsNavbarOpen(!isNavbarOpen);
   };
   return (
@@ -58,10 +61,16 @@ function NavbarMenu() {
           <Button value="register" onClick={showregisterHandler} />
         </div>
       </div>
-      <GiHamburgerMenu
-        className={styles["burger-icon"]}
+      <div
+        className={`${styles["navbar-burger-menu"]} ${
+          isNavbarOpen && styles["animate-burger"]
+        }`}
         onClick={toggleNavbar}
-      />
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </>
   );
 }

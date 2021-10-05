@@ -14,8 +14,16 @@ function AvailableGames() {
           <p>To meet today's challenges & earn cryptocurrency</p>
         </div>
         <div>
-          <Button value="TOP GAMES" icon={rightArrow} />
-          <Button value="Tournaments" icon={rightArrow} />
+          <Button
+            value="TOP GAMES"
+            icon={rightArrow}
+            className={styles["available-game-fix"]}
+          />
+          <Button
+            value="Tournaments"
+            icon={rightArrow}
+            className={styles["available-game-fix"]}
+          />
         </div>
       </div>
       <GridCards className={styles["grid-fix-position"]} />
