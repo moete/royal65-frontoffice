@@ -5,6 +5,7 @@ import Button from "../UI/Button";
 import Login from "./AuthComponents/Login";
 import Register from "./AuthComponents/Register";
 import styles from "./NavbarMenu.module.css";
+
 function NavbarMenu() {
   /* Login and register modal  handlers */
   const [loginIsShown, setLoginIsShown] = React.useState(false);
@@ -57,6 +58,7 @@ function NavbarMenu() {
         </div>
       </div>
 
+      
     </>
   );
 }
