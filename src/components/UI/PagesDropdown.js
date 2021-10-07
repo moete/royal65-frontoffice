@@ -18,6 +18,7 @@ function PagesDropdown() {
       }
     });
   }, [isOpenDropdown]);
+
   return (
     <div className={styles["navbar-custom-dropdown"]}>
       <div
@@ -38,6 +39,11 @@ function PagesDropdown() {
         <li onClick={() => setIsOpenDropDown(!isOpenDropdown)}>
           <NavLink to="/about" activeClassName={styles["active"]}>
             About
+          </NavLink>
+        </li>
+        <li onClick={() => setIsOpenDropDown(!isOpenDropdown)}>
+          <NavLink to="/faq" activeClassName={styles["active"]}>
+            FAQ
           </NavLink>
         </li>
       </ul>

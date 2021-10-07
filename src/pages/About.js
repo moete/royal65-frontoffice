@@ -10,13 +10,13 @@ import bgGames from "./../assets/images/bgAbout.svg";
 import styles from "./About.module.css";
 function About() {
   return (
-    <div className={styles["About-page"]}>
+    <main className={styles["About-page"]}>
       <Header title="About us" pageLocation="Home > About Us" bgImg={bgGames} />
       <Story />
       <LeadingBrand />
       <Team />
       <Footer />
-    </div>
+    </main>
   );
 }
 

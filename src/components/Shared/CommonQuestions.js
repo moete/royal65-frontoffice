@@ -37,7 +37,7 @@ const questions = [
     answer: "",
   },
 ];
-function CommonQuestions() {
+function CommonQuestions(props) {
   return (
     <div className={styles["common-question"]}>
       <header>

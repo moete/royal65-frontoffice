@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tournaments from "./pages/Tournaments";
 import Games from "./pages/Games";
 import About from "./pages/About";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/faq">
+          <FAQ />
         </Route>
         <Route exact={true} path="/">
           <Home />
