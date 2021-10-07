@@ -39,4 +39,10 @@
   .tournaments-games-heading {
     width: 100%;
   }
+  .tournaments-games-heading {
+    width: 100%;
+  }
+  .tournaments-games-heading h2 {
+    font-size: 36px;
+  }
 }
