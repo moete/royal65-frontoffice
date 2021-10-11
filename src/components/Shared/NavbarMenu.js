@@ -3,6 +3,7 @@ import { Navbar } from ".";
 import Button from "../UI/Button";
 import Login from "./AuthComponents/Login";
 import Register from "./AuthComponents/Register";
+
 import styles from "./NavbarMenu.module.css";
 
 function NavbarMenu() {
@@ -54,6 +55,16 @@ function NavbarMenu() {
           />
           <Button value="register" onClick={showregisterHandler} />
         </div>
+      </div>
+      <div
+        className={`${styles["navbar-burger-menu"]} ${
+          isNavbarOpen && styles["animate-burger"]
+        }`}
+        onClick={toggleNavbar}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </>
   );

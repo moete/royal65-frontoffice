@@ -1,6 +1,9 @@
 import React from "react";
 
 import SearchBar from "./SearchBar";
+import FilterBar from "./FilterBar";
+
+import GridTournaments from "./GridTournaments";
 import styles from "./TournamentsGames.module.css";
 function TournamentsGames() {
   return (
@@ -12,6 +15,8 @@ function TournamentsGames() {
         <p>Play in multi-player tournaments or head to head for cash prizes.</p>
       </div>
       <SearchBar />
+      <FilterBar />
+      <GridTournaments />
     </section>
   );
 }

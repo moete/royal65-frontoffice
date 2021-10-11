@@ -35,8 +35,14 @@
   margin: 20px 0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .tournaments-games-heading {
     width: 100%;
+  }
+  .tournaments-games-heading {
+    width: 100%;
+  }
+  .tournaments-games-heading h2 {
+    font-size: 36px;
   }
 }
