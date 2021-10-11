@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Navbar } from ".";
 import Button from "../UI/Button";
 import Login from "./AuthComponents/Login";
@@ -33,32 +32,29 @@ function NavbarMenu() {
       {loginIsShown && (
         <Login
           onClose={hideloginHandler}
-          onOpenRegister={showregisterHandler}
+          onOpenRegister={showloginHandler}
         />
       )}
       {registerIsShown && (
         <Register
           onClose={hideregisterHandler}
-          onOpenLogin={showloginHandler}
+          onOpenLogin={showregisterHandler}
         />
       )}
       <div
-        className={`${styles["navbar-menu"]} ${
-          isNavbarOpen ? styles["toggle-navbar"] : ""
-        }`}
+        className={`${styles["navbar-menu"]} ${isNavbarOpen ? styles["toggle-navbar"] : ""
+          }`}
       >
         <Navbar />
         <div className={styles["navbar-btn-container"]}>
           <Button
-            value="sign up"
+            value="sign in"
             className={styles["signin-btn"]}
             onClick={showloginHandler}
           />
           <Button value="register" onClick={showregisterHandler} />
         </div>
       </div>
-
-      
     </>
   );
 }
